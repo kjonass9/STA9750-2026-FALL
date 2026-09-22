@@ -1,0 +1,55 @@
+---
+title: "Kimberly Jonas' GitHub"
+---
+# ◕ヮ◕)ﾉ*:･ﾟ✧Kimberly Jonas(✿◡‿◡)
+
+## About Me
+  I am a graduate student with an interest in data analytics, business intelligence, and research and decision making. Through my coursework and projects, I am developing experience with R, statistical analysis,
+data visualization, and GitHub.
+
+  My career interests center on using data to identify patterns, solve business problems, and communicate actionable insights. I am particularly interested in opportunities that allow me to combine analytical thinking, technical skills, and clear communication.
+
+
+## Education
+**Baruch College**  
+M.S. Business Analytics
+
+**University of Notre Dame**
+B.A. Psychology & French and Francophone Studies
+
+(❁´◡`❁)(❁´◡`❁)
+
+## Technical Skills
+R | SQL | Excel | Python | GitHub
+
+## Career Interests
+- Data and Research Analysis
+- Business Analysis
+- Data Visualization
+
+## GitHub
+[Visit my GitHub profile](https://github.com/kjonass9)
+
+☆*: .｡. o(≧▽≦)o .｡.:*☆(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+if(!require("leaflet")){
+    options(repos=c(CRAN="https://cloud.r-project.org"))
+    install.packages("leaflet")
+    stopifnot(require("leaflet"))
+}
+
+baruch_longitude <- -73.98333
+baruch_latitude  <- +40.74028
+
+leaflet() |>
+  addTiles() |>
+  setView(baruch_longitude, baruch_latitude, zoom=17) |>
+  addPopups(baruch_longitude, baruch_latitude, 
+            "I am a Master's student at <b>Baruch College</b>!")
+```
