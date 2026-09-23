@@ -4,10 +4,10 @@ title: "Kimberly Jonas' GitHub"
 # ◕ヮ◕)ﾉ*:･ﾟ✧Kimberly Jonas(✿◡‿◡)
 
 ## About Me
-  I am a graduate student with an interest in data analytics, business intelligence, and research and decision making. Through my coursework and projects, I am developing experience with R, statistical analysis,
+  I am a graduate student at Baruch with an interest in data analytics, business intelligence, and research and decision making. Through my coursework and projects, I am developing experience with R, statistical analysis,
 data visualization, and GitHub.
 
-  My career interests center on using data to identify patterns, solve business problems, and communicate actionable insights. I am particularly interested in opportunities that allow me to combine analytical thinking, technical skills, and clear communication.
+  My career interests center on using data to identify patterns, solve business problems, and communicate efficient solutions to stakeholders. I am a Business Analyst, which allows me to combine my analytical background and technical skills with research that I've always wanted to do.
 
 
 ## Education
@@ -38,19 +38,21 @@ R | SQL | Excel | Python | GitHub
 #| message: false
 #| warning: false
 
-if(!require("leaflet")){
-    options(repos=c(CRAN="https://cloud.r-project.org"))
-    install.packages("leaflet")
-    stopifnot(require("leaflet"))
-}
+library (leaflet)
 
-baruch_longitude <- -73.98333
-baruch_latitude  <- +40.74028
+gt_longitude <- -58.1551
+gt_latitude  <- +6.8013
 
 leaflet() |>
   addTiles() |>
-  setView(baruch_longitude, baruch_latitude, zoom=17) |>
-  addPopups(baruch_longitude, baruch_latitude, 
-            "I am a Master's student at <b>Baruch College</b>!")
+  setView(gt_longitude, gt_latitude, zoom=10) |>
+  addPopups(gt_longitude, gt_latitude, 
+            "I'm from <b>here</b>!")
 ```
 
+```{r}
+#| include: false
+1+1
+```
+--------------
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
