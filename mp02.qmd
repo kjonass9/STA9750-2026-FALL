@@ -94,6 +94,7 @@ get_eia_sep <- function(state, abbr){
     )
 }
 
+
 EIA_SEP_REPORT <- map2(state.name, state.abb, get_eia_sep) |> list_rbind()
 ```
 
