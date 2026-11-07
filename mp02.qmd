@@ -1164,7 +1164,7 @@ The winner of the Worst Carbon Footprint award was Plaquemines Port, followed in
 
 The findings demonstrate that public transportation has significant potential to support environmental sustainability, but that potential depends on several factors. The carbon intensity of electricity, fuel selection, passenger demand, and operational efficiency all influence the environmental performance of transit systems.
 
-Overall, public transportation is an important part of the path toward a lower-carbon future and sustainability. 
+Overall, public transportation is an important part of the path toward a lower carbon future and sustainability.  
 
 ::: {.callout-note title="AI Usage Statement" collapse="true"}
 
